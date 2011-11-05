@@ -1,7 +1,7 @@
 geo_filter.py is an example script for filtering to geocoded tweets from
 Twitter's Streaming API.
 
-In particular, this script uses various regexes that gets substantially more
+One thing is, this script uses a regex that gets locations for substantially more 
 tweets than Twitter's own official geo metadata, via lat/long coordinates in
 the user.location field.  In the far-enough past, these unofficial data were
 the only source of geolocation metadata.
