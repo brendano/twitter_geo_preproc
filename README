@@ -1,11 +1,13 @@
-geo_filter.py is an example script for filtering to geocoded tweets from Twitter's Streaming API.
+geo_filter.py is an example script for filtering to geocoded tweets from
+Twitter's Streaming API.
 
 In particular, this script uses various regexes that gets substantially more
-tweets than Twitter's own official geo metadata, from a particular sources
-(lat/long coordinates in the user.location field).  In the past, these
-unofficial data were the only source of geolocation metadata.
+tweets than Twitter's own official geo metadata, via lat/long coordinates in
+the user.location field.  In the far-enough past, these unofficial data were
+the only source of geolocation metadata.
 
-hose_util.py has a convenience function to safely iterate through tweets from a stream.
+hose_util.py has a convenience function to safely iterate through tweets from a
+stream.
 
 twokenize.py, emoticons.py is a tokenizer.
 
