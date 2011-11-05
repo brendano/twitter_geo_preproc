@@ -5,6 +5,8 @@ tweets than Twitter's own official geo metadata, from a particular sources
 (lat/long coordinates in the user.location field).  In the past, these
 unofficial data were the only source of geolocation metadata.
 
-For completeness, a copy of my Twitter tokenizer is thrown in here too.
+hose_util.py has a convenience function to safely iterate through tweets from a stream.
+
+twokenize.py, emoticons.py is a tokenizer.
 
 --Brendan O'Connor (http://brenocon.com)
