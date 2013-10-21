@@ -1,0 +1,4 @@
+cab:~/geo/GeoTM/geo2/preproc8/70_word_reservoir_samples % pv /mal2/brendano/twi/geo2/v8/smalltweets2/* | python sample.py > sample.all.json
+
+cab:~/geo/GeoTM/geo2/preproc8/70_word_reservoir_samples % python report.py < sample.all.json > sample.all.html
+
