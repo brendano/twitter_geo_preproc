@@ -1,0 +1,16 @@
+~/twi/geo/GeoTM/geo_metro/2012pops % wget 'http://www.census.gov/popest/data/counties/totals/2012/files/CO-EST2012-Alldata.csv'
+
+
+something is wrong..
+
+> sum(d$fips %in% kept)
+[1] 734
+> sum(d$fips %in% notused)
+[1] 248
+
+
+
+
+~/twi/geo/GeoTM/geo_metro/allcounty_analysis % cut -f3 msa_counties_notused | tr , '\n' > msa_counties_notused.fips
+~/twi/geo/GeoTM/geo_metro/allcounty_analysis % cut -f3 msa_counties_kept | tr , '\n' > msa_counties_kepy.fips   
+

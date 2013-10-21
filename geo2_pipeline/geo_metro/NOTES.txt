@@ -1,0 +1,49 @@
+update 2012-01-27
+jacob and i cannot figure out where the lat/lon's in the msa*.tsv files originally came from.
+but it seems the right thing to do is recompute them from the twitter sample's
+population within the MSA.
+
+=========================
+below was done for the 2010 NIPSWS paper (though much still relevant)
+
+census data is from
+http://www.census.gov/popest/metro/metro.html
+described in (also downloaded here):
+http://www.census.gov/popest/metro/files/2009/CBSA-EST2009-alldata.txt
+
+
+principal cities per CBSA
+"Principal cities of metropolitan and micropolitan statistical areas"
+http://www.census.gov/population/www/metroareas/lists/2008/List2.txt
+from http://www.census.gov/population/www/metroareas/metrodef.html
+
+
+
+tabawk,csv2tsv, other tabular data munging tools: http://github.com/brendano/tsvutils
+
+
+/d/twi/geo/GeoTM/geo_metro [] % cat orig/CBSA-EST2009-alldata.csv|iconv -c -t UTF-8 | csv2tsv | namecut CBSA MDIV STCOU POPESTIMATE2009 LSAD NAME | tabawk '$5=="Metropolitan Statistical Area"' > cbsa_column_subset_msa.tsv 
+
+
+/d/twi/geo/GeoTM/geo_metro [] % cat List2.txt |egrep '[0-9]{5}      ' | perl -pe 's/ {3,}/\t/g' > cbsa_principal_cities.tsv
+
+
+/d/twi/geo/GeoTM/geo_metro [] % cat cbsa_principal_cities.tsv | tabawk 'seen[$1]{next}  {seen[$1]=1; print}' > cbsa_1st_city.tsv
+
+
+
+/d/twi/geo/GeoTM/geo_metro [] % head -25 pop_msa_city.tsv| tabawk '{print $3}' | ruby fetch.rb > geonames_lookup.jsons
+
+sanity check
+/d/twi/geo/GeoTM/geo_metro [] % paste =( json2tsv name < geonames_lookup.jsons|tail +2) =(head -25 pop_msa_city.tsv)
+/d/twi/geo/GeoTM/geo_metro [] % paste =( json2tsv name adminCode1 < geonames_lookup.jsons|tail +2) =(head -25 pop_msa_city.tsv)   |tsv2fmt
+
+manually lookup patch in several lines where look returned 'null'
+/d/twi/geo/GeoTM/geo_metro [] % curl 'ws.geonames.org/searchJSON?maxRows=1&q=Louisville,+KY'
+(and several others)
+/d/twi/geo/GeoTM/geo_metro [] % vim geonames_lookup.jsons
+
+
+/d/twi/geo/GeoTM/geo_metro [] % paste pop_msa_city.tsv =(json2tsv lat lng < geonames_lookup.jsons|tail +2) | tabawk '{print $4,$5, $1,$2}' > lat_long_pop_msa.tsv
+
+

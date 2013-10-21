@@ -1,0 +1,25 @@
+Looking for NY borough centroids, 2011-12-10
+
+Queens is weird, seems crappy and too close to Brooklyn?
+Have also checked coordinates from Wikipedia, seem somewhat similar.
+
+LAME VERSION
+ny_brooklyn | N 40° 39' 0''39 | W 73° 56' 58'' | geonames "section of populated place"
+ny_manhattan | N 40° 47' 0''47 | W 73° 57' 58'' | geonames "section of populated place"
+ny_queens | 40°42′15.0″N | 73°55′4.0″W  |  geonames "second-order administrative division"
+ny_bronx | N 40° 49' 38''38 | W 73° 55' 24'' | geonames "second-order administrative division"
+ny_staten | N 40° 33' 44'' | W 74° 8' 23'' | geonames "populated place" (also has 2nd order admin)
+
+> read.table(pipe("awk 'x{print} /^CLEANED/{x=1}' < ny_boroughs.txt"),sep="|")
+> data.frame(name=d$V1, lon=-(d$V6+(1/60)*d$V7), lat=d$V3+(1/60)*d$V4)
+> map('state',c('new york','new jersey'),ylim=c(40.5,41),xlim=c(-74.5,-73.5))
+> with(data.frame(name=d$V1, lon=-(d$V6+(1/60)*d$V7), lat=d$V3+(1/60)*d$V4), points(lon,lat,col='blue'))
+
+populations from wikipedia. got lazy.
+
+CLEANED
+ny_brooklyn  | N | 40 | 39  | W| 73| 56 | 2,504,700 |geonames "section of populated place"
+ny_manhattan | N | 40 | 47  | W| 73| 57 | 1,585,873 | geonames "section of populated place"
+ny_queens    | N | 40 | 42  | W| 73| 55 | 2,230,722 | geonames "second-order administrative division"
+ny_bronx     | N | 40 | 49  | W| 73| 55 | 2,504,700 |geonames "second-order administrative division"
+ny_staten    | N | 40 | 33  | W| 74| 8  | 443,728 | geonames "populated place" (also has 2nd order admin)

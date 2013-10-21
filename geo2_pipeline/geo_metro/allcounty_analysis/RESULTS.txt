@@ -1,0 +1,20 @@
+13min to count
+cab:~/geo/GeoTM/geo_metro/allcounty_analysis % pv ~/geo2/data/v8/mal2/smalltweets2/* | cut -f3 | python count.py
+
+{'msa_blacklist': 5279817, 'msa_whitelist': 97379790, 'not_in_any_msa': 7220011}
+
+=> 88.6% of our messages are in one of the top-200 MSA's.
+
+This is out of: messages in the lower48 that survived the first-round message filters (content and egocounts).  "Lower48" is defined as, "any county in any of the lower48 states".
+
+"blacklist" means: MSAs not in the top-200 (there are 364 MSA's total ... 362 or so in the lower48).
+
+
+> n=97379790+7220011+5279817
+> 5279817/n
+[1] 0.04805092
+> 7220011
+[1] 7220011
+> 97379790/n
+[1] 0.8862407
+

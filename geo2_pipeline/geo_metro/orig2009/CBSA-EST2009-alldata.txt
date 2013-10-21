@@ -1,0 +1,150 @@
+Population Estimates and Estimated Components of Change 
+for Metropolitan and Micropolitan Statistical Areas and Their Geographic 
+Components: April 1, 2000 to July 1, 2009 (CBSA-EST2009-alldata)
+  
+File:   7/1/2009 Metropolitan and Micropolitan Statistical Area Population 
+Estimates File
+
+Date: March 2010  
+Source: U.S. Census Bureau, Population Division
+
+Sort order of observations: Metropolitan and micropolitan statistical areas and 
+their components sorted separately in FIPS code sort.  
+
+Data fields (in the order that they appear):
+
+VARIABLE:			DESCRIPTION:
+CBSA				Core Based Statistical Area code
+MDIV				Metropolitan Division code
+STCOU				State and county code
+NAME				Name/title of area
+LSAD				Legal/Statistical Area Description
+CENSUS2000POP			4/1/2000 resident Census 2000 population
+ESTIMATESBASE2000		4/1/2000 resident total population estimates base
+POPESTIMATE2000			7/1/2000 resident total population estimate
+POPESTIMATE2001			7/1/2001 resident total population estimate
+POPESTIMATE2002			7/1/2002 resident total population estimate
+POPESTIMATE2003			7/1/2003 resident total population estimate
+POPESTIMATE2004			7/1/2004 resident total population estimate
+POPESTIMATE2005			7/1/2005 resident total population estimate
+POPESTIMATE2006			7/1/2006 resident total population estimate
+POPESTIMATE2007			7/1/2007 resident total population estimate
+POPESTIMATE2008			7/1/2008 resident total population estimate
+POPESTIMATE2009			7/1/2009 resident total population estimate
+NPOPCHG_2000		        Numeric change in resident total population 4/1/2000
+			        to 7/1/2000
+NPOPCHG_2001		        Numeric change in resident total population 7/1/2000
+			        to 7/1/2001
+NPOPCHG_2002		        Numeric change in resident total population 7/1/2001
+			        to 7/1/2002
+NPOPCHG_2003		        Numeric change in resident total population 7/1/2002
+			        to 7/1/2003
+NPOPCHG_2004		        Numeric change in resident total population 7/1/2003
+			        to 7/1/2004
+NPOPCHG_2005		        Numeric change in resident total population 7/1/2004
+			        to 7/1/2005
+NPOPCHG_2006		        Numeric change in resident total population 7/1/2005
+			        to 7/1/2006
+NPOPCHG_2007		        Numeric change in resident total population 7/1/2006
+                                to 7/1/2007
+NPOPCHG_2008			Numeric change in resident total population 7/1/2007
+				to 7/1/2008
+NPOPCHG_2009			Numeric change in resident total population 7/1/2008
+				to 7/1/2009
+NATURALINC2000		        Natural increase in period 4/1/2000 to 6/30/2000
+NATURALINC2001		        Natural increase in period 7/1/2000 to 6/30/2001
+NATURALINC2002		        Natural increase in period 7/1/2001 to 6/30/2002
+NATURALINC2003		        Natural increase in period 7/1/2002 to 6/30/2003
+NATURALINC2004		        Natural increase in period 7/1/2003 to 6/30/2004
+NATURALINC2005		        Natural increase in period 7/1/2004 to 6/30/2005
+NATURALINC2006		        Natural increase in period 7/1/2005 to 6/30/2006
+NATURALINC2007		        Natural increase in period 7/1/2006 to 6/30/2007
+NATURALINC2008			Natural increase in period 7/1/2007 to 6/30/2008
+NATURALINC2009			Natural increase in period 7/1/2008 to 6/30/2009
+BIRTHS2000			Births in period 4/1/2000 to 6/30/2000
+BIRTHS2001			Births in period 7/1/2000 to 6/30/2001
+BIRTHS2002			Births in period 7/1/2001 to 6/30/2002
+BIRTHS2003			Births in period 7/1/2002 to 6/30/2003
+BIRTHS2004			Births in period 7/1/2003 to 6/30/2004
+BIRTHS2005			Births in period 7/1/2004 to 6/30/2005
+BIRTHS2006			Births in period 7/1/2005 to 6/30/2006
+BIRTHS2007			Births in period 7/1/2006 to 6/30/2007
+BIRTHS2008			Births in period 7/1/2007 to 6/30/2008
+BIRTHS2009			Births in period 7/1/2008 to 6/30/2009
+DEATHS2000			Deaths in period 4/1/2000 to 6/30/2000
+DEATHS2001			Deaths in period 7/1/2000 to 6/30/2001
+DEATHS2002			Deaths in period 7/1/2001 to 6/30/2002
+DEATHS2003			Deaths in period 7/1/2002 to 6/30/2003
+DEATHS2004			Deaths in period 7/1/2003 to 6/30/2004
+DEATHS2005			Deaths in period 7/1/2004 to 6/30/2005
+DEATHS2006			Deaths in period 7/1/2005 to 6/30/2006
+DEATHS2007			Deaths in period 7/1/2006 to 6/30/2007
+DEATHS2008			Deaths in period 7/1/2007 to 6/30/2008
+DEATHS2009			Deaths in period 7/1/2008 to 6/30/2009
+NETMIG2000		        Net migration in period 4/1/2000 to 6/30/2000
+NETMIG2001		        Net migration in period 7/1/2000 to 6/30/2001
+NETMIG2002		        Net migration in period 7/1/2001 to 6/30/2002
+NETMIG2003		        Net migration in period 7/1/2002 to 6/30/2003
+NETMIG2004		        Net migration in period 7/1/2003 to 6/30/2004
+NETMIG2005		        Net migration in period 7/1/2004 to 6/30/2005
+NETMIG2006		        Net migration in period 7/1/2005 to 6/30/2006
+NETMIG2007		        Net migration in period 7/1/2006 to 6/30/2007
+NETMIG2008			Net migration in period 7/1/2007 to 6/30/2008
+NETMIG2009			Net migration in period 7/1/2008 to 6/30/2009
+INTERNATIONALMIG2000		Net international migration in period 4/1/2000 to 6/30/2000
+INTERNATIONALMIG2001		Net international migration in period 7/1/2000 to 6/30/2001
+INTERNATIONALMIG2002		Net international migration in period 7/1/2001 to 6/30/2002
+INTERNATIONALMIG2003		Net international migration in period 7/1/2002 to 6/30/2003
+INTERNATIONALMIG2004		Net international migration in period 7/1/2003 to 6/30/2004
+INTERNATIONALMIG2005		Net international migration in period 7/1/2004 to 6/30/2005
+INTERNATIONALMIG2006		Net international migration in period 7/1/2005 to 6/30/2006
+INTERNATIONALMIG2007		Net international migration in period 7/1/2006 to 6/30/2007
+INTERNATIONALMIG2008		Net international migration in period 7/1/2007 to 6/30/2008
+INTERNATIONALMIG2009		Net international migration in period 7/1/2008 to 6/30/2009
+DOMESTICMIG2000			Net domestic migration in period 4/1/2000 to 6/30/2000
+DOMESTICMIG2001			Net domestic migration in period 7/1/2000 to 6/30/2001
+DOMESTICMIG2002			Net domestic migration in period 7/1/2001 to 6/30/2002
+DOMESTICMIG2003			Net domestic migration in period 7/1/2002 to 6/30/2003
+DOMESTICMIG2004			Net domestic migration in period 7/1/2003 to 6/30/2004
+DOMESTICMIG2005			Net domestic migration in period 7/1/2004 to 6/30/2005
+DOMESTICMIG2006			Net domestic migration in period 7/1/2005 to 6/30/2006
+DOMESTICMIG2007			Net domestic migration in period 7/1/2006 to 6/30/2007
+DOMESTICMIG2008			Net domestic migration in period 7/1/2007 to 6/30/2008
+DOMESTICMIG2009			Net domestic migration in period 7/1/2008 to 6/30/2009
+RESIDUAL2000			Residual for period 4/1/2000 to 6/30/2000
+RESIDUAL2001			Residual for period 7/1/2000 to 6/30/2001
+RESIDUAL2002			Residual for period 7/1/2001 to 6/30/2002
+RESIDUAL2003			Residual for period 7/1/2002 to 6/30/2003
+RESIDUAL2004			Residual for period 7/1/2003 to 6/30/2004
+RESIDUAL2005			Residual for period 7/1/2004 to 6/30/2005
+RESIDUAL2006			Residual for period 7/1/2005 to 6/30/2006
+RESIDUAL2007			Residual for period 7/1/2006 to 6/30/2007
+RESIDUAL2008			Residual for period 7/1/2007 to 6/30/2008
+RESIDUAL2009			Residual for period 7/1/2008 to 6/30/2009
+
+/1 Broomfield County, CO was formed from parts of Adams, Boulder, Jefferson, and Weld Counties, CO on
+November 15, 2001 and was coextensive with Broomfield city.  
+
+Note: For purposes of presenting data for metropolitan and micropolitan statistical areas for Census 2000,
+Broomfield is treated as if it were a county at the time of the 2000 census.  
+
+The April 1, 2000 estimates base reflects changes to the Census 2000 population resulting from legal
+boundary updates as of January 1, 2009, other geographic program changes, and the Count Question Resolution 
+program.
+
+Total population change includes a residual.  This residual represents the change in population that cannot 
+be attributed to any specific demographic component of change - see "State & County Terms & Definitions" at
+<http://www.census.gov/popest/topics/terms/states.html>.
+
+All geographic boundaries for the July 1, 2009 population estimates series are as of January 1, 2009.
+
+The Office of Management and Budget's statistical area definitions for metropolitan and micropolitan
+statistical areas, as well as metropolitan divisions, are those issued by that agency in November 2008 
+<http://www.whitehouse.gov/omb/assets/omb/bulletins/fy2009/09-01.pdf>.
+
+The metropolitan and micropolitan statistical area population estimates are based upon the county estimates.
+The county estimates methodology is available at:
+<http://www.census.gov/popest/topics/methodology/2009-st-co-meth.pdf>.  
+
+Source: U.S. Census Bureau, Population Division
+
