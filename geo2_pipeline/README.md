@@ -19,7 +19,9 @@ Steps are numbered like BASIC so you can figure out what order to run them in.
 
 
 Internal version information ("v8"):
-    SVN ... /usr0/svn-base/brendano/GeoTM/geo2
-    Last Changed Rev: 27203
-    Last Changed Date: 2013-08-29 19:27:05 -0400 (Thu, 29 Aug 2013)
-    ("svn export" then moved out the interesting subdirs.)
+```
+SVN ... /usr0/svn-base/brendano/GeoTM/geo2
+Last Changed Rev: 27203
+Last Changed Date: 2013-08-29 19:27:05 -0400 (Thu, 29 Aug 2013)
+("svn export" then moved out the interesting subdirs.)
+```
