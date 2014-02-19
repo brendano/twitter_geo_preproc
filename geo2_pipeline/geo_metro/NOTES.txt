@@ -1,7 +1,8 @@
 update 2012-01-27
 jacob and i cannot figure out where the lat/lon's in the msa*.tsv files originally came from.
+(2013-10: I have vague memories there was name matching against cities' lat/lons.)
 but it seems the right thing to do is recompute them from the twitter sample's
-population within the MSA.
+population within the MSA.  this is now used ... see preproc8/60_msa_centers
 
 =========================
 below was done for the 2010 NIPSWS paper (though much still relevant)
