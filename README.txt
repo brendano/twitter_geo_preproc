@@ -11,4 +11,6 @@ stream.
 
 twokenize.py, emoticons.py is a tokenizer.
 
+geo2_pipeline/ is a processing pipeline that also includes U.S. county geocoding.
+
 --Brendan O'Connor (http://brenocon.com)

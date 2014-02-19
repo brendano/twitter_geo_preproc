@@ -1,4 +1,5 @@
 This is the pipeline used for http://arxiv.org/abs/1210.5268
+
 Steps are numbered like BASIC so you can figure out what order to run them in.
 
 * [00]  Geo filter to coordinates
