@@ -1,6 +1,7 @@
 import state_codes
 import geodb
 
+# Copies of these here: http://brenocon.com/geocode/
 paths = {
 'world_country': '/home/brendano/geo/geodata/world.json',
 'us_county':     '/home/brendano/geo/geodata/counties.tiger2010.json',
