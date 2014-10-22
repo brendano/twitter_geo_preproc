@@ -2,7 +2,7 @@
 # Loading all counties takes 1.3 GB RAM
 
 import json
-import glob,os,sys,yajl,re,itertools
+import glob,os,sys,re,itertools
 import shapely.wkb
 from shapely.geometry import Point
 import rtree

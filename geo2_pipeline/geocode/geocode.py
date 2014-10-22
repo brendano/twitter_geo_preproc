@@ -3,8 +3,8 @@ import geodb
 
 # Copies of these here: http://brenocon.com/geocode/
 paths = {
-'world_country': '/home/brendano/geo/geodata/world.json',
-'us_county':     '/home/brendano/geo/geodata/counties.tiger2010.json',
+'world_country': '/home/brenocon/geocode/tm_world_borders-0.3.json',
+'us_county':     '/home/brenocon/geocode/counties.tiger2010.json',
 }
 
 ### Lazy loading of geo databases
